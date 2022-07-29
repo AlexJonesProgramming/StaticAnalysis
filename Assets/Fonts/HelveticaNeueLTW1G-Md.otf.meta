@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 3dc40b7553215e4468ed013cb8e677ab
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Helvetica Neue LT W1G
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 98a8ecb01653b1c4a829b03647d5e018, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

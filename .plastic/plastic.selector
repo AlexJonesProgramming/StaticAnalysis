@@ -1,0 +1,4 @@
+repository "FSELifestyle@EcherSketch@cloud"
+  path "/"
+    br "/main"
+    co "/main"
