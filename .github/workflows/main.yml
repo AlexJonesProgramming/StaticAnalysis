@@ -47,7 +47,7 @@ jobs:
       #    restore-keys: Library-
         
       - name: Initialize CodeQL
-        uses: github/codeql-action/init@v2
+        uses: github/codeql-action/init@v2.1.0
         with: 
           languages: ${{ matrix.language }}
         
