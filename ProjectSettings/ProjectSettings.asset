@@ -156,6 +156,7 @@ PlayerSettings:
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
     Android: com.ThermoFisherScientific.FSELifestyle
+    Standalone: com.DTSG.FSELifestyle
     iPhone: com.ThermoFisherScientific.FSELifestyle
   buildNumber:
     Standalone: 0
