@@ -46,10 +46,10 @@ jobs:
       #    key: Library-${{ matrix.targetPlatform }}
       #    restore-keys: Library-
         
-      - name: Initialize CodeQL
-        uses: github/codeql-action/init@v2
-        with: 
-          languages: ${{ matrix.language }}
+      #- name: Initialize CodeQL
+      #  uses: github/codeql-action/init@v2
+      #  with: 
+      #    languages: ${{ matrix.language }}
         
       # Builds the unity project
       #- name: Build-the-freaking-project-please
@@ -61,10 +61,15 @@ jobs:
       #  with:
       #    targetPlatform: Android
       
-      - name: Setup .NET Core SDK ${{ matrix.dotnet-version }}
-        uses: actions/setup-dotnet@v2
+      - name: Set up .NET
+        uses: xt0rted/setup-dotnet@v1.0.0
         with:
-          dotnet-version: ${{ matrix.dotnet-version }}
+          dotnet-version: 4.7.1
+      
+      #- name: Setup .NET Core SDK ${{ matrix.dotnet-version }}
+      #  uses: actions/setup-dotnet@v2
+      #  with:
+      #    dotnet-version: ${{ matrix.dotnet-version }}
       
       - name: Install dependencies
         run: dotnet restore Nope.sln
@@ -73,5 +78,5 @@ jobs:
         run: |
           dotnet build Nope.sln /p:UseSharedCompilation=false
        
-      - name: Perform CodeQL Analysis
-        uses: github/codeql-action/analyze@v2
+      #- name: Perform CodeQL Analysis
+      #  uses: github/codeql-action/analyze@v2
