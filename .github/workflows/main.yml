@@ -67,7 +67,7 @@ jobs:
           dotnet-version: ${{ matrix.dotnet-version }}
       
       - name: Install dependencies
-        run: dotnet restore
+        run: dotnet restore Nope.sln
       
       - name: Build
         run: |
