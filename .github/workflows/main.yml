@@ -70,7 +70,7 @@ jobs:
         run: dotnet restore
       
       - name: Build
-      - run: |
+        run: |
           dotnet build Nope.sln /p:UseSharedCompilation=false
        
       - name: Perform CodeQL Analysis
