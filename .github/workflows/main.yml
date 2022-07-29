@@ -30,8 +30,8 @@ jobs:
       - name: Build-the-freaking-project-please
         uses: game-ci/unity-builder@v2
         env:
-          UNITY_EMAIL: ${{ "secrets.kayleigh.shaw@thermofisher.com" }}
-          UNITY_PASSWORD: ${{ secrets.TheBurdenIsHeavy0! }}
+          UNITY_EMAIL: ${{ secrets.kayleigh.shaw@thermofisher.com }}
+          UNITY_PASSWORD: ${{ secrets.TheresSt1llALight }}
           UNITY_SERIAL: ${{ secrets.SC-SPKB-776H-Q2SF-DCCK-EA5B}}
         with:
           targetPlatform: Android
