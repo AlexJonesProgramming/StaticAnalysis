@@ -62,7 +62,7 @@ jobs:
       #    targetPlatform: Android
       
       - run: |
-          msbuild /p:UseSharedCompilation=false
+          dotnet build FSELifestyle.sln /p:UseSharedCompilation=false
        
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@v2
