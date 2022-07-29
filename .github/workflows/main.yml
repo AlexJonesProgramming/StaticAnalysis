@@ -31,7 +31,7 @@ jobs:
         # CodeQL supports [ 'cpp', 'csharp', 'go', 'java', 'javascript', 'python' ]
         # Learn more:
         # https://docs.github.com/en/free-pro-team@latest/github/finding-security-vulnerabilities-and-errors-in-your-code/configuring-code-scanning#changing-the-languages-that-are-analyzed
-        dotnet-version: [ '2.0' ]
+        dotnet-version: [ '7.0' ]
     
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
