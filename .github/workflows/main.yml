@@ -31,7 +31,7 @@ jobs:
         # CodeQL supports [ 'cpp', 'csharp', 'go', 'java', 'javascript', 'python' ]
         # Learn more:
         # https://docs.github.com/en/free-pro-team@latest/github/finding-security-vulnerabilities-and-errors-in-your-code/configuring-code-scanning#changing-the-languages-that-are-analyzed
-
+        dotnet-version: [ '4.x' ]
     
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -40,11 +40,11 @@ jobs:
         uses: actions/checkout@v3
         
       #Cache the unity build to speed up future builds?
-      - uses: actions/cache@v2
-        with:
-          path: Library
-          key: Library-${{ matrix.targetPlatform }}
-          restore-keys: Library-
+      #- uses: actions/cache@v2
+      #  with:
+      #    path: Library
+      #    key: Library-${{ matrix.targetPlatform }}
+      #    restore-keys: Library-
         
       - name: Initialize CodeQL
         uses: github/codeql-action/init@v2
@@ -61,6 +61,15 @@ jobs:
       #  with:
       #    targetPlatform: Android
       
+      - name: Setup .NET Core SDK ${{ matrix.dotnet-version }}
+        uses: actions/setup-dotnet@v2
+        with:
+          dotnet-version: ${{ matrix.dotnet-version }}
+      
+      - name: Install dependencies
+        run: dotnet restore
+      
+      - name: Build
       - run: |
           dotnet build Nope.sln /p:UseSharedCompilation=false
        
