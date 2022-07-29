@@ -47,7 +47,7 @@ jobs:
       #    restore-keys: Library-
         
       - name: Initialize CodeQL
-        uses: github/codeql-action/init@v3
+        uses: github/codeql-action/init@v2
         with: 
           languages: ${{ matrix.language }}
         
@@ -62,7 +62,7 @@ jobs:
       #    targetPlatform: Android
       
       - name: Setup .NET Core SDK ${{ matrix.dotnet-version }}
-        uses: actions/setup-dotnet@v2
+        uses: actions/setup-dotnet@v3
         with:
           dotnet-version: ${{ matrix.dotnet-version }}
       
