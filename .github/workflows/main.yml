@@ -82,10 +82,10 @@ jobs:
               exit 1
           }
 
-          - name: Set up .NET
-            uses: xt0rted/setup-dotnet@v1.0.0
-            with:
-              dotnet-version: 4.7.1
+      - name: Set up .NET
+        uses: xt0rted/setup-dotnet@v1.0.0
+        with:
+          dotnet-version: 4.7.1
 
       #- name: Setup .NET Core SDK ${{ matrix.dotnet-version }}
       #  uses: actions/setup-dotnet@v2
