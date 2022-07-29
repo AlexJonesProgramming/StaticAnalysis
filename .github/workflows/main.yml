@@ -18,7 +18,7 @@ jobs:
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
-    runs-on: windows-2019
+    runs-on: Windows-Lastest
     permissions:
       actions: read
       contents: read
@@ -31,7 +31,7 @@ jobs:
         # CodeQL supports [ 'cpp', 'csharp', 'go', 'java', 'javascript', 'python' ]
         # Learn more:
         # https://docs.github.com/en/free-pro-team@latest/github/finding-security-vulnerabilities-and-errors-in-your-code/configuring-code-scanning#changing-the-languages-that-are-analyzed
-        dotnet-version: [ '4.7.1' ]
+        dotnet-version: [ '2.0' ]
     
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -60,28 +60,11 @@ jobs:
       #    UNITY_SERIAL: ${{ secrets.UNITY_SERIAL }}
       #  with:
       #    targetPlatform: Android
-      
-      
-      - name: Install component on windows 2022
-        run: |
-          Set-Location "C:\Program Files (x86)\Microsoft Visual Studio\Installer\"
-          $InstallPath = "C:\Program Files\Microsoft Visual Studio\2022\Enterprise"
-          $componentsToAdd = @(
-            ".NET Framework 4.7.1 SDK"
-          )
-          [string]$workloadArgs = $componentsToAdd | ForEach-Object {" --add " +  $_}
-          $Arguments = ('/c', "vs_installer.exe", 'modify', '--installPath', "`"$InstallPath`"",$workloadArgs, '--quiet', '--norestart', '--nocache')
-          $process = Start-Process -FilePath cmd.exe -ArgumentList $Arguments -Wait -PassThru -WindowStyle Hidden
 
-      - name: Set up .NET
-        uses: xt0rted/setup-dotnet@v1.0.0
+      - name: Setup .NET Core SDK ${{ matrix.dotnet-version }}
+        uses: actions/setup-dotnet@v2
         with:
-          dotnet-version: 4.7.1
-
-      #- name: Setup .NET Core SDK ${{ matrix.dotnet-version }}
-      #  uses: actions/setup-dotnet@v2
-      #  with:
-      #    dotnet-version: ${{ matrix.dotnet-version }}
+          dotnet-version: ${{ matrix.dotnet-version }}
       
       - name: Install dependencies
         run: dotnet restore Nope.sln
