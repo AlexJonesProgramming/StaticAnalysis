@@ -56,51 +56,51 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\SingleSignOn\iDaptiveOIDCBootstrapper.cs" />
+    <Compile Include="Assets\WEBVIEW\SampleWebView.cs" />
     <Compile Include="Assets\Scripts\SingleSignOn\iDaptiveSSOTester.cs" />
+    <Compile Include="Assets\Scripts\JLi\Singleton.cs" />
     <Compile Include="Assets\Trash\EventTester.cs" />
     <Compile Include="Assets\Samples\i5 Toolkit for Unity\1.8.1\OpenID Connect\OpenIDConnectTester.cs" />
     <Compile Include="Assets\Samples\i5 Toolkit for Unity\1.8.1\OpenID Connect\Multiple Providers in Parallel\GitHubOIDCService.cs" />
     <Compile Include="Assets\Scripts\ApplicationStatusManager.cs" />
     <Compile Include="Assets\Scripts\UI\FitGridLayoutToUI.cs" />
     <Compile Include="Assets\Scripts\In App Web Browser\LinkWizard.cs" />
+    <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
+    <Compile Include="Assets\Scripts\SingleSignOn\SimpleLogin.cs" />
     <Compile Include="Assets\Samples\i5 Toolkit for Unity\1.8.1\OpenID Connect\Multiple Providers in Parallel\MultiProviderTester.cs" />
+    <Compile Include="Assets\Scripts\SafeArea.cs" />
     <Compile Include="Assets\Scripts\UI\SimpleSearch.cs" />
     <Compile Include="Assets\Samples\i5 Toolkit for Unity\1.8.1\OpenID Connect\GitHub\GitHubOIDCBootstrapper.cs" />
     <Compile Include="Assets\Scripts\In App Web Browser\Android\ChromeCustomTabs.cs" />
     <Compile Include="Assets\Scripts\PlatformSpecific\Android\FullCloseAndroid.cs" />
+    <Compile Include="Assets\Scripts\SingleSignOn\iDaptiveOIDCProvider.cs" />
     <Compile Include="Assets\Trash\TestRects.cs" />
     <Compile Include="Assets\Trash\TestAsync.cs" />
+    <Compile Include="Assets\Trash 1\Obfuscation.cs" />
     <Compile Include="Assets\Scripts\SingleSignOn\SimpleLoginGitHub.cs" />
+    <Compile Include="Assets\Scripts\AdvanceSearchButton.cs" />
+    <Compile Include="Assets\Scripts\Deep Linking\LauncherDeepLinkManager.cs" />
     <Compile Include="Assets\Scripts\UI\ModalDialogue.cs" />
     <Compile Include="Assets\Scripts\SimpleCameraController.cs" />
     <Compile Include="Assets\Scripts\SingleSignOn\iDaptiveOIDCService.cs" />
+    <Compile Include="Assets\Samples\i5 Toolkit for Unity\1.8.1\OpenID Connect\Learning Layers\LearningLayersBootstrapper.cs" />
+    <Compile Include="Assets\Scripts\In App Web Browser\IOS\OpenSafariViewOnStart.cs" />
     <Compile Include="Assets\Samples\i5 Toolkit for Unity\1.8.1\OpenID Connect\Multiple Providers in Parallel\LearningLayersOIDCService.cs" />
     <Compile Include="Assets\Scripts\OpenURL.cs" />
     <Compile Include="Assets\Scripts\SetPlayerIcons.cs" />
     <Compile Include="Assets\Scripts\TFEvents.cs" />
+    <Compile Include="Assets\Scripts\UI\LogInScreenManager.cs" />
     <Compile Include="Assets\WEBVIEW\WebViewNavigationArrows.cs" />
+    <Compile Include="Assets\Scripts\SingleSignOn\PKCEHelper.cs" />
+    <Compile Include="Assets\Scripts\SingleSignOn\iDaptiveAuthorizationFlowAnswer.cs" />
+    <Compile Include="Assets\Scripts\UI\UserInfoUI.cs" />
     <Compile Include="Assets\Trash 1\EventTest.cs" />
     <Compile Include="Assets\Scripts\In App Web Browser\IOS\SafariView.cs" />
     <Compile Include="Assets\Scripts\JLi\JLiDebugger.cs" />
     <Compile Include="Assets\Samples\i5 Toolkit for Unity\1.8.1\OpenID Connect\Multiple Providers in Parallel\MultiProviderBootstrapper.cs" />
-    <Compile Include="Assets\Scripts\SingleSignOn\iDaptiveUserInfo.cs" />
-    <Compile Include="Assets\Scripts\SingleSignOn\iDaptiveOIDCBootstrapper.cs" />
-    <Compile Include="Assets\WEBVIEW\SampleWebView.cs" />
-    <Compile Include="Assets\Scripts\JLi\Singleton.cs" />
-    <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
-    <Compile Include="Assets\Scripts\SingleSignOn\SimpleLogin.cs" />
-    <Compile Include="Assets\Scripts\SafeArea.cs" />
-    <Compile Include="Assets\Scripts\SingleSignOn\iDaptiveOIDCProvider.cs" />
-    <Compile Include="Assets\Trash 1\Obfuscation.cs" />
-    <Compile Include="Assets\Scripts\AdvanceSearchButton.cs" />
-    <Compile Include="Assets\Scripts\Deep Linking\LauncherDeepLinkManager.cs" />
-    <Compile Include="Assets\Samples\i5 Toolkit for Unity\1.8.1\OpenID Connect\Learning Layers\LearningLayersBootstrapper.cs" />
-    <Compile Include="Assets\Scripts\In App Web Browser\IOS\OpenSafariViewOnStart.cs" />
-    <Compile Include="Assets\Scripts\UI\LogInScreenManager.cs" />
-    <Compile Include="Assets\Scripts\SingleSignOn\PKCEHelper.cs" />
-    <Compile Include="Assets\Scripts\SingleSignOn\iDaptiveAuthorizationFlowAnswer.cs" />
-    <Compile Include="Assets\Scripts\UI\UserInfoUI.cs" />
     <Compile Include="Assets\Scripts\UI\SideBarManager.cs" />
+    <Compile Include="Assets\Scripts\SingleSignOn\iDaptiveUserInfo.cs" />
     <Compile Include="Assets\WEBVIEW\StatusDebug.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -348,9 +348,6 @@
     </Reference>
     <Reference Include="UnityEditor.UnityConnectModule">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.24f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.24f1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -772,10 +769,6 @@
     <ProjectReference Include="UnityEngine.UI.csproj">
       <Project>{097ED24E-04F3-D1EC-6BC0-E4089F11D22B}</Project>
       <Name>UnityEngine.UI</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.PlasticSCM.Editor.csproj">
-      <Project>{C6E7D0A0-57ED-D2E2-6D65-A8BD40589A70}</Project>
-      <Name>Unity.PlasticSCM.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Mathematics.csproj">
       <Project>{77F6BD67-B4D0-FA37-8E77-A607EA68A34E}</Project>

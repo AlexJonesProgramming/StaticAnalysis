@@ -7,7 +7,7 @@ using UnityEngine.Networking;
 using System.Net.Http;
 using System.Text;
 using System;
-using Newtonsoft.Json;
+//using Newtonsoft.Json;
 using TMPro;
 using System.Security.Cryptography;
 using System.IO;
@@ -212,10 +212,10 @@ public class SimpleLogin : MonoBehaviour
 
                 //Read the response JSON and parse it into a dictionary
                 string resultContent = await result.Content.ReadAsStringAsync();
-                Dictionary<string, string> values = JsonConvert.DeserializeObject<Dictionary<string, string>>(resultContent);
+                Dictionary<string, string> values = JsonUtility.FromJson<Dictionary<string, string>>(resultContent);//JsonConvert.DeserializeObject<Dictionary<string, string>>(resultContent);
 
                 //Check for and assign valuse from the response JSON.
-                if(values.ContainsKey("id_token"))
+                if (values.ContainsKey("id_token"))
                     id_token = values["id_token"];
                 else
                     Debug.LogError("There was a response from the Token Endpoint but it did not contain a ID Token.");
@@ -299,7 +299,7 @@ public class SimpleLogin : MonoBehaviour
 
                 //Read the response JSON and parse it into a dictionary
                 string resultContent = await result.Content.ReadAsStringAsync();
-                Dictionary<string, string> values = JsonConvert.DeserializeObject<Dictionary<string, string>>(resultContent);
+                Dictionary<string, string> values = JsonUtility.FromJson<Dictionary<string, string>>(resultContent);//JsonConvert.DeserializeObject<Dictionary<string, string>>(resultContent);
 
                 //Check for and assign valuse from the response JSON.
                 if (values.ContainsKey("id_token"))
@@ -427,7 +427,7 @@ public class SimpleLogin : MonoBehaviour
             TFEvents.LoadedUserInfo.Invoke(userInfo);
 
             //We need the info here to find the auth time.
-            values = JsonConvert.DeserializeObject<Dictionary<string, string>>(userInfo);
+            values = JsonUtility.FromJson<Dictionary<string, string>>(userInfo);//JsonConvert.DeserializeObject<Dictionary<string, string>>(userInfo);
             foreach (KeyValuePair<string, string> pair in values)
             {
                 Debug.Log("DecodeID_Token: " + pair.Key + "=" + pair.Value);

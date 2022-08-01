@@ -56,42 +56,42 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Editor\External\PlistElement.cs" />
     <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Editor\Xcode\PBXPath.cs" />
     <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Editor\EditorHelpers.cs" />
     <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Editor\Ui\PluginWindow.cs" />
     <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Editor\Xcode\PBX\Lexer.cs" />
-    <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Editor\PreBuild\AndroidPreBuild.cs" />
-    <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Editor\External\PlistElementArray.cs" />
-    <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Editor\Xcode\AssetCatalog.cs" />
-    <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Editor\External\PlistElementInteger.cs" />
-    <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Editor\External\PlistElementDict.cs" />
-    <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Editor\Xcode\PBX\Elements.cs" />
-    <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Editor\Xcode\PBXProjectData.cs" />
-    <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Editor\Xcode\JsonParser.cs" />
-    <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Editor\IPosBuilder.cs" />
-    <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Editor\iOSPosBuild.cs" />
-    <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Editor\Xcode\PBX\Parser.cs" />
-    <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Editor\Xcode\PBX\Sections.cs" />
-    <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Editor\Xcode\PBX\Serializer.cs" />
-    <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Editor\Xcode\ProjectCapabilityManager.cs" />
-    <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Editor\External\PlistElement.cs" />
     <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Editor\Xcode\PlistParser.cs" />
+    <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Editor\PreBuild\AndroidPreBuild.cs" />
     <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Editor\Xcode\PBXProject.cs" />
+    <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Editor\External\PlistElementArray.cs" />
     <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Editor\Xcode\PBX\Objects.cs" />
     <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Editor\Xcode\PBX\Utils.cs" />
     <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Editor\External\PlistDocument.cs" />
     <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Editor\PreBuild\IPreBuild.cs" />
+    <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Editor\Xcode\AssetCatalog.cs" />
+    <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Editor\External\PlistElementInteger.cs" />
     <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Editor\PreBuild\PreBuildProcess.cs" />
+    <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Editor\External\PlistElementDict.cs" />
     <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Editor\UwpPosBuild.cs" />
+    <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Editor\Xcode\PBX\Elements.cs" />
     <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Editor\External\PlistElementString.cs" />
     <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Editor\MacOsPosBuild.cs" />
+    <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Editor\Xcode\PBXProjectData.cs" />
     <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Editor\ShellHelper.cs" />
+    <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Editor\Xcode\JsonParser.cs" />
+    <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Editor\IPosBuilder.cs" />
+    <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Editor\iOSPosBuild.cs" />
     <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Editor\Ui\DebugWindow.cs" />
     <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Editor\BuildProcessor.cs" />
     <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Editor\Ui\DocumentationWindow.cs" />
     <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Editor\Xcode\PBXProjectExtensions.cs" />
     <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Editor\Xcode\PBXCapabilityType.cs" />
+    <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Editor\Xcode\PBX\Parser.cs" />
+    <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Editor\Xcode\PBX\Sections.cs" />
+    <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Editor\Xcode\PBX\Serializer.cs" />
     <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Editor\External\PlistElementBoolean.cs" />
+    <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Editor\Xcode\ProjectCapabilityManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -331,23 +331,8 @@
     <Reference Include="UnityEditor.UWP.Extensions">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.24f1\Editor\Data\PlaybackEngines\MetroSupport\UnityEditor.UWP.Extensions.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Plastic.Newtonsoft.Json">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.4\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Plastic.Antlr3.Runtime">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.4\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="unityplastic">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.4\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
-    </Reference>
-    <Reference Include="log4netPlastic">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.4\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
-    </Reference>
     <Reference Include="ICSharpCode.NRefactory">
       <HintPath>Library\PackageCache\com.unity.render-pipelines.core@10.7.0\Editor\ShaderGenerator\ICSharpCode.NRefactory.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
@@ -783,10 +768,6 @@
     <ProjectReference Include="UnityEngine.UI.csproj">
       <Project>{097ED24E-04F3-D1EC-6BC0-E4089F11D22B}</Project>
       <Name>UnityEngine.UI</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.PlasticSCM.Editor.csproj">
-      <Project>{C6E7D0A0-57ED-D2E2-6D65-A8BD40589A70}</Project>
-      <Name>Unity.PlasticSCM.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Mathematics.csproj">
       <Project>{77F6BD67-B4D0-FA37-8E77-A607EA68A34E}</Project>

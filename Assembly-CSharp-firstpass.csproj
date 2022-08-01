@@ -56,26 +56,26 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Scripts\LinkActivation.cs" />
     <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Scripts\Providers\ProviderHelpers.cs" />
+    <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Scripts\DeepLinkManager.cs" />
     <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Scripts\Providers\DummyLinkProvider.cs" />
+    <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Scripts\Storage\MiniJson.cs" />
     <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Scripts\Providers\MacLinkProvider.cs" />
     <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Scripts\UniversalDeeplinkingRuntimeScript.cs" />
-    <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Scripts\Providers\IosLinkProvider.cs" />
-    <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Demo\Scripts\DeeplinkingExample.cs" />
-    <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Scripts\Providers\UwpLinkProvider.cs" />
-    <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Scripts\Providers\AndroidLinkProvider.cs" />
-    <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Scripts\LinkInformation.cs" />
-    <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Scripts\ILinkProvider.cs" />
-    <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Scripts\LinkActivation.cs" />
-    <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Scripts\DeepLinkManager.cs" />
-    <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Scripts\Storage\MiniJson.cs" />
     <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Scripts\AppLinkingConfiguration.cs" />
     <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Demo\Scripts\OpenLinkBehaviour.cs" />
     <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Scripts\LinkProviderFactory.cs" />
     <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Scripts\Providers\WindowsLinkProvider.cs" />
+    <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Scripts\Providers\IosLinkProvider.cs" />
+    <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Demo\Scripts\DeeplinkingExample.cs" />
+    <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Scripts\Providers\UwpLinkProvider.cs" />
     <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Scripts\Providers\LinuxLinkProvider.cs" />
     <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Scripts\Storage\ConfigurationStorage.cs" />
+    <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Scripts\Providers\AndroidLinkProvider.cs" />
+    <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Scripts\LinkInformation.cs" />
     <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Scripts\Providers\EditorLinkProvider.cs" />
+    <Compile Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\Scripts\ILinkProvider.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Plugins\ImaginationOverflow\UniversalDeepLinking\libs\Android\UniversalDeepLinkManifest.xml" />
@@ -305,9 +305,6 @@
     </Reference>
     <Reference Include="UnityEditor.UnityConnectModule">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.24f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.24f1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -725,10 +722,6 @@
     <ProjectReference Include="UnityEngine.UI.csproj">
       <Project>{097ED24E-04F3-D1EC-6BC0-E4089F11D22B}</Project>
       <Name>UnityEngine.UI</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.PlasticSCM.Editor.csproj">
-      <Project>{C6E7D0A0-57ED-D2E2-6D65-A8BD40589A70}</Project>
-      <Name>Unity.PlasticSCM.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Mathematics.csproj">
       <Project>{77F6BD67-B4D0-FA37-8E77-A607EA68A34E}</Project>

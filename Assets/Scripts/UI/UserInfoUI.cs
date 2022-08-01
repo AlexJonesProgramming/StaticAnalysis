@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using Newtonsoft.Json;
+//using Newtonsoft.Json;
 
 
 /// <summary>
@@ -28,7 +28,7 @@ public class UserInfoUI : MonoBehaviour
     {
         // This doesn't see to cause in problems if the LoadedUserInfo event is triggered in an async function.
 
-        Dictionary<string, string> values = JsonConvert.DeserializeObject<Dictionary<string, string>>(info);
+        Dictionary<string, string> values = JsonUtility.FromJson<Dictionary<string, string>>(info);//JsonConvert.DeserializeObject<Dictionary<string, string>>(info);
 
         string firstName = "";
         string lastName = "";
