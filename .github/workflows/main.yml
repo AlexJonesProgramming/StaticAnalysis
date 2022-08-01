@@ -50,7 +50,9 @@ jobs:
         uses: github/codeql-action/init@v2
         with: 
           languages: ${{ matrix.language }}
-        
+          debug: true
+          
+      
       # Builds the unity project
       #- name: Build-the-freaking-project-please
       #  uses: game-ci/unity-builder@v2
