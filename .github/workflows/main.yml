@@ -71,7 +71,7 @@ jobs:
       
       - name: Build
         run: |
-          dotnet build Nope.sln /p:UseSharedCompilation=false
+          dotnet build Nope.sln
        
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@v2
