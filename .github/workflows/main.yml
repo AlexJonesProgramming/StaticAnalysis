@@ -46,10 +46,10 @@ jobs:
       #    key: Library-${{ matrix.targetPlatform }}
       #    restore-keys: Library-
         
-      #- name: Initialize CodeQL
-      #  uses: github/codeql-action/init@v2
-      #  with: 
-      #    languages: ${{ matrix.language }}
+      - name: Initialize CodeQL
+        uses: github/codeql-action/init@v2
+        with: 
+          languages: ${{ matrix.language }}
         
       # Builds the unity project
       #- name: Build-the-freaking-project-please
@@ -73,5 +73,5 @@ jobs:
         run: |
           dotnet build Nope.sln /p:UseSharedCompilation=false
        
-      #- name: Perform CodeQL Analysis
-      #  uses: github/codeql-action/analyze@v2
+      - name: Perform CodeQL Analysis
+        uses: github/codeql-action/analyze@v2
