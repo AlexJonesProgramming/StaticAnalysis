@@ -70,9 +70,12 @@ jobs:
       #- name: Install dependencies
       #  run: dotnet restore Nope.sln
       
-      - name: Build
-        run: |
-          dotnet build Nope.sln
+      - name: Autobuild
+        uses: github/codeql-action/autobuild@v2
+      
+      #- name: Build
+      #  run: |
+      #    dotnet build Nope.sln
        
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@v2
